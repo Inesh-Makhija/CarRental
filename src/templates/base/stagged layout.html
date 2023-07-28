@@ -1,0 +1,64 @@
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+  
+  .stagged-charcter
+  {
+    background-image: linear-gradient(
+      -225deg,
+      #1A5653 0%,
+      #107869 29%,
+      #5CD85A 67%,
+      #08313A 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+</style>
+
+<div class="header-2">
+
+  <nav class="bg-black py-2 md:py-4">
+    <div class="container px-4 mx-auto md:flex md:items-center">
+
+      <div class="flex justify-between items-center">
+        <a href="/" >
+          <div class="container">
+            <div class="row">
+                    <div class="col-md-12 text-justify">
+                    <h3 class="stagged-charcter"> cArEnTaL</h3>
+                    </div>
+            </div>
+        </div>
+        </a>
+        <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+        <a href="/" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-green-600">Home</a>
+        <a href="{% url 'cars:list' %}" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Cars</a>
+        <a href="{% url 'cars:create' %}" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Create</a>
+        <a href="http://127.0.0.1:8000/admin/" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Admin</a>
+        <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact</a>
+        <a href="#" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">Login</a>
+        <a href="#" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Signup</a>
+      </div>
+    </div>
+  </nav>
+</div>
