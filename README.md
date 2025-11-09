@@ -6,6 +6,9 @@ This project implements a robust, full-stack web-based **Car Rental Management S
 
 It is built upon the classic and reliable **PHP/MySQL** stack, making it easy to deploy on any standard LAMP/WAMP environment.
 
+> **Note on Project History:**
+> This repository represents a revival and renewed commitment to this system, which was **originally developed in [Year of original development, e.g., 2022]**. We are focused on ongoing maintenance and potential feature enhancements.
+
 ## ✨ Key Features
 
 ### Management & Control (Admin Portal)
